@@ -2,6 +2,11 @@
 logs
 *.log
 
+.DS_Store
+assets/
+node_modules/
+.idea
+
 # Runtime data
 pids
 *.pid

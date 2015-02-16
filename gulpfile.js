@@ -3,6 +3,9 @@ var concat = require('gulp-concat')
 var uglify = require('gulp-uglify')
 var ngAnnotate = require('gulp-ng-annotate')
 
+gulp.task('watch:js', ['js'], function(){
+    gulp.watch('ng/**/*.js', ['js'])
+})
 
 gulp.task('js', function(){
     gulp.src(['module.js', 'ng/**/*.js'])
